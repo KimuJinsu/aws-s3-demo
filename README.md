@@ -135,23 +135,25 @@ AWS S3와의 실제 연동 로직을 처리하는 클래스입니다.
 
 ---
 
-> **⚠️ 참고:**  
-> 보안상의 이유로 `application.yml` 파일 및 민감한 정보는 저장소에서 제외되었습니다.  
-> 프로젝트를 실행하려면, 다음과 같은 형태로 `application.yml` 파일을 구성해주세요:
->
-> ```yaml
-> cloud:
->   aws:
->     credentials:
->       accessKey: <YOUR_ACCESS_KEY>
->       secretKey: <YOUR_SECRET_KEY>
->     region:
->       static: <YOUR_REGION>
->   s3:
->     bucket: <YOUR_BUCKET_NAME>
-> ```
-
 ## ✨ 학습 내용
 - AWS S3와 연동하여 파일 업로드/삭제 기능 구현.
 - Postman을 활용한 REST API 테스트 실습.
 - Spring Boot와 AWS SDK의 통합 작업 이해.
+
+---
+
+## ⚠️ 참고
+
+보안상의 이유로 `application.yml` 파일 및 민감한 정보는 저장소에서 제외되었습니다.  
+이 프로젝트를 실행하려면 아래와 같은 내용으로 `application.yml` 파일을 구성하셔야 합니다:
+
+```yaml
+cloud:
+  aws:
+    credentials:
+      accessKey: <YOUR_ACCESS_KEY>
+      secretKey: <YOUR_SECRET_KEY>
+    region:
+      static: <YOUR_REGION>
+  s3:
+    bucket: <YOUR_BUCKET_NAME>
