@@ -1,5 +1,5 @@
 
-# 🌐 AWS S3 Demo Application.
+# 🌐 AWS S3 Demo Application
 
 ## 📖 프로젝트 소개
 이 프로젝트는 **Spring Boot**를 사용하여 **AWS S3**와 연동한 파일 업로드 및 삭제 기능을 구현한 데모 애플리케이션입니다.  
